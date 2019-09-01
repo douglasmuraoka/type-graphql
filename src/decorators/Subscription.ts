@@ -18,7 +18,7 @@ interface PubSubOptions {
 }
 
 interface SubscribeOptions {
-  subscribe: ResolverFn;
+  subscribe: any;
 }
 
 export type SubscriptionOptions = AdvancedOptions & MergeExclusive<PubSubOptions, SubscribeOptions>;
